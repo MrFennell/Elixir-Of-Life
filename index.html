@@ -21,12 +21,12 @@
 <div id="main" class="container">
 
 	<div id="main-splash-img" >
-		<div id="getStartedText">
+		<div id="get-started-text">
 			<h2>Eternal youth at shockingly little cost to you or your loved ones.</h2>
 		</div>
 	</div>
 	
-	<div id="main-text-blocks">
+	<div class="section" id="main-text-blocks">
 
 		<div class="text-blocks" id="text-blocks-ourVision">
 			<h3>Our vision</h3>
@@ -73,26 +73,32 @@
   <div class="section" id="testemonials">
 		<h3>Don't just take our word for it!</h3>
 		
-		<p class="quoteHead">Fear of death was holding me back.</p>
-    <p class="quoteBody">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
-			the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
-		<p class="quoteName">Betsy Rogers, Flight Technician</p>
-		
-		<p class="quoteHead">My mother had been diagnosed with cancer.</p>
-    <p class="quoteBody">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
-			Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
-    <p class="quoteName">Cliff Clartowski, Cartographer</p>
+		<div class="quote-block">
+			<p class="quote-head">Fear of death was holding me back.</p>
+			<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
+				the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
+			<p class="quote-name">Betsy Rogers, Flight Technician</p>
+		</div>
 
+		<div class="quote-block">
+			<p class="quote-head">My mother had been diagnosed with cancer.</p>
+			<p class="quote-body">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
+				Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
+			<p class="quote-name">Cliff Clartowski, Cartographer</p>
+		</div>
 
-		<p class="quoteHead">Our daughter had been bedridden for months.</p>
-    <p class="quoteBody">Fearing the worst we contacted Elixir of Life and they were eager to help. 
-			She's been a healthy seven year old girl for over four years now! </p>
-    <p class="quoteName">Jane Pharmins, Stenographer</p>
+		<div class="quote-block">
+			<p class="quote-head">Our daughter had been bedridden for months.</p>
+			<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
+				She's been a healthy seven year old girl for over five years now! </p>
+			<p class="quote-name">Jane Pharmins, Stenographer</p>
+		</div>
 
-		<p class="quoteHead">All shall become dust.</p>
-    <p class="quoteBody"> But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
-    <p class="quoteName">Xiroth the Unending, Unknown</p>
-
+		<div class="quote-block">
+			<p class="quote-head">All shall become dust.</p>
+			<p class="quote-body">But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
+			<p class="quote-name">Xiroth the Unending, Unknown</p>
+		</div>
 	</div>
 	
   <div class="section" id="contact">
@@ -109,21 +115,33 @@
 				<input type="text" id="phone">
 				<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
 				<textarea id="summary">
+
 				<p id="additional-info-p">I would like to fill out some optional info myself:</p>
 				<input type="radio" id="additional-info-yes" name="additional-info-yes" value="Yes!">
 				<label for="additional-info-yes">Yes!</label>
 				<input type="radio" id="additional-info-no" name="additional-info-no" value="No thanks.">
 				<label for="additional-info-no">No thanks.</label>
 
+				<label for="Gender">Gender:</label>
+				<input type="text" id="Gender" name="Gender">
+				<label for="eye-color">Eye Color:</label>
+				<input type="text" id="eye-color" name="eye-color">
+				<label for="religion">Religion/Faith:</label>
+				<input type="text" id="religion" name="religion">
+				<label for="blood-type">Blood Type:</label>
+				<input type="text" id="blood-type" name="blood-type">
+				<label for="blood-type">Emergency Contact:</label>
+				<input type="text" id="emergency-contact" name="emergency-contact">
+
+				<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
+				<textarea id="summary">
+
         <input type="submit" id="submit" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
 
   <div class="section">
-    <h3>Some closing notes from one of our founders.</h3>
-    <video id="faqMovie" src="https://vimeo.com/211758157" controls>
-
-    </video>
+    
   </div>
 </div>
 </body>
