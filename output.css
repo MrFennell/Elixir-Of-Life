@@ -99,7 +99,7 @@ a {
   align-items: flex-end;
 }
 #nav-bar li {
-  padding: 0 20px 0 0;
+  padding: 0 80px 0 0;
 }
 #nav-bar a {
   color: #255a6f;
@@ -248,6 +248,22 @@ h3 {
 }
 .quote-container-right-aligned .quote-block .quote-name {
   float: right;
+}
+
+#contact_dont_miss_out {
+  width: 50%;
+  margin: auto;
+}
+
+#requestInfo {
+  display: flex;
+  flex-direction: column;
+}
+#requestInfo label {
+  width: auto;
+}
+#requestInfo input[type=text] {
+  width: 45%;
 }
 
 /*# sourceMappingURL=output.css.map */

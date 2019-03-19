@@ -93,7 +93,7 @@ a{
 		
 	}
 	li{
-		padding:0 20px 0 0;
+		padding:0 80px 0 0;
 	}
 	a{
 		color:$light-blue;
@@ -243,4 +243,18 @@ h3{
 			float:right;
 		}
 	}
+}
+#contact_dont_miss_out{
+	width:50%;
+	margin:auto;
+}
+#requestInfo{
+	display:flex;
+	flex-direction:column;
+		label{
+			width:auto;
+		}
+		input[type='text']{
+			width:45%;
+		}
 }
