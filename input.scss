@@ -1,6 +1,8 @@
 $font-family: 'Open Sans', sans-serif;
 $primary-color: #333;
 $off-white:#eaeaea;
+$light-blue:#255a6f;
+$dark-blue: #031b28;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: 100% $font-family;
+  font-family: $font-family;
 }
 ol, ul {
 	list-style: none;
@@ -52,16 +54,21 @@ table {
 }
 header{
 	position: fixed;
-    display: flex;
-    align-items: center;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
 	height:80px;
-    top: 0px;
+	top: 0px;
 	background-color:$off-white;
 }
-h3{
-	font-size: 1.17em;
+h2{
+	font-size: 2em;
+	position: relative;
+	top: 220px;
+	color: $off-white;
+	text-align: left;
 }
+
 p{
   line-height: 1.5em;
   font-size:16px;
@@ -87,10 +94,10 @@ a{
   padding:0 20px 0 0;
 }
 #nav-bar ul li a{
-	color:#255a6f;
+	color:$light-blue;
 	font-size: 1.17em;
 }
-.container{
+#main{
     width:100%;
     background-color:$off-white;
     margin:auto;
@@ -106,27 +113,39 @@ a{
 	background-size: cover;
 	background-position: bottom;
 }
-
 #get-started-text{
 	margin-left: 70px;
-    padding-top: 70px;
-    color: $off-white;
-    text-align: right;
-    width: 50%;
+	padding-top: 70px;
+	color: $off-white;
+	text-align: right;
+	width: 50%;
 }
-h2{
-	font-size: 2em;
-}
-#get-started-text p{
-	padding-top:1.5em;
+.section{
+	padding:0 70px 0 70px;
 }
 h3{
-	font-size: 1.17em;
-	padding:2em 0 1em 0;
+	font-size: 26px;
+	padding: 88px 0 14px 0;
 	text-align: center;
 }
 
+#get-started-text p{
+	padding-top:1.5em;
+}
+.text-blocks{
+	h3{
+		border-bottom: 2px solid $light-blue;
+	}
+	p{
+		margin-top:34px;
+	}
+}
 
-.section{
-	padding:0 70px 0 70px;
+#main-text-blocks{
+	display: flex;
+	flex-wrap: wrap;
+}
+.text-blocks{
+	width: 40%;
+	margin-left: 100px;
 }

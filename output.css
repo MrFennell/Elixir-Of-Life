@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: 100% "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ol, ul {
@@ -64,8 +64,12 @@ header {
   background-color: #eaeaea;
 }
 
-h3 {
-  font-size: 1.17em;
+h2 {
+  font-size: 2em;
+  position: relative;
+  top: 220px;
+  color: #eaeaea;
+  text-align: left;
 }
 
 p {
@@ -102,7 +106,7 @@ a {
   font-size: 1.17em;
 }
 
-.container {
+#main {
   width: 100%;
   background-color: #eaeaea;
   margin: auto;
@@ -127,22 +131,35 @@ a {
   width: 50%;
 }
 
-h2 {
-  font-size: 2em;
+.section {
+  padding: 0 70px 0 70px;
+}
+
+h3 {
+  font-size: 26px;
+  padding: 88px 0 14px 0;
+  text-align: center;
 }
 
 #get-started-text p {
   padding-top: 1.5em;
 }
 
-h3 {
-  font-size: 1.17em;
-  padding: 2em 0 1em 0;
-  text-align: center;
+.text-blocks h3 {
+  border-bottom: 2px solid #255a6f;
+}
+.text-blocks p {
+  margin-top: 34px;
 }
 
-.section {
-  padding: 0 70px 0 70px;
+#main-text-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-blocks {
+  width: 40%;
+  margin-left: 100px;
 }
 
 /*# sourceMappingURL=output.css.map */
