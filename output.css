@@ -68,8 +68,10 @@ h2 {
   font-size: 2em;
   position: relative;
   top: 220px;
+  left: 70px;
   color: #eaeaea;
   text-align: left;
+  max-width: 700px;
 }
 
 p {
@@ -123,14 +125,6 @@ a {
   background-position: bottom;
 }
 
-#get-started-text {
-  margin-left: 70px;
-  padding-top: 70px;
-  color: #eaeaea;
-  text-align: right;
-  width: 50%;
-}
-
 .section {
   padding: 0 70px 0 70px;
 }
@@ -145,21 +139,64 @@ h3 {
   padding-top: 1.5em;
 }
 
-.text-blocks h3 {
-  border-bottom: 2px solid #255a6f;
-}
-.text-blocks p {
-  margin-top: 34px;
-}
-
 #main-text-blocks {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+#main-text-blocks .text-blocks {
+  width: 40%;
+}
+#main-text-blocks .text-blocks h3 {
+  border-bottom: 2px solid #255a6f;
+}
+#main-text-blocks .text-blocks p {
+  margin-top: 34px;
 }
 
-.text-blocks {
-  width: 40%;
-  margin-left: 100px;
+#testemonials {
+  background: #031b28;
+}
+
+.quote-container-left-aligned {
+  width: 80%;
+  height: 178px;
+  display: flex;
+  align-items: flex-end;
+}
+.quote-container-left-aligned .quote-pic {
+  height: 108px;
+  width: 108px;
+  margin-left: 3px;
+}
+.quote-container-left-aligned .quote-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #255a6f;
+  -webkit-clip-path: polygon(100% 0, 0 56%, 100% 100%);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+.quote-container-left-aligned .quote-block {
+  width: 70%;
+  padding: 33px 23px 13px 33px;
+  background-color: #255a6f;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+}
+.quote-container-left-aligned .quote-block .quote-head {
+  color: #eaeaea;
+  padding-bottom: 28px;
+  font-size: 18px;
+}
+.quote-container-left-aligned .quote-block .quote-body {
+  width: 90%;
+  padding-bottom: 20px;
+}
+.quote-container-left-aligned .quote-block .quote-name {
+  float: right;
 }
 
 /*# sourceMappingURL=output.css.map */
