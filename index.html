@@ -26,7 +26,7 @@
 	
 	<div class="section" id="main-text-blocks">
 
-		<div class="text-blocks" id="text-blocks-ourVision">
+		<div class="text-blocks" id="ourVision">
 			<h3>Our Vision</h3>
 			<p>Whether it's old age, illness or simple depression, we've all feared death's cold embrace. </p>
 			<p>Our vision is a comprehensive, cross-state plan that would allow ordinary families to afford 
@@ -35,14 +35,14 @@
 				None can speak of them or know their countless names but they have one goal: satisfaction.</p>
 		</div>
 
-		<div class="text-blocks" id="text-blocks-whyimmortality">
+		<!-- <div class="text-blocks" id="text-blocks-whyimmortality">
 			<h3>Why Immortality?</h3>
 			<p>Imagine a world where you no longer had to worry about sickness taking your life or that of a loved one. </p>
 			<p>Imagine a world where your worst enemy is on their deathbed and you are continuing to live your life, 
 				free from your burdons.</p>
 			<p>Imagine this being available at a low, personal cost where we do all the legwork. 
 				Take some time to think about it - time is one thing we have more than enough of.</p>
-		</div>
+		</div> -->
 
 		<div class="text-blocks" id="text-blocks-caniafford">
 				<h3>Can I Afford This?</h3>
@@ -58,12 +58,76 @@
 				<p>Take as much time as needed to research your options. 
 					Enter your age and sex below to get a rough estimate on how much time you have to make a decision.</p>
 				<form>
-					<label name="age" for="age">Age:</label>
-					<input type="text" name="age"></label>
-					<label name="sex" for="sex">Sex:</label>
-					<input type="radio" name="sex" value="male">
-					<input type="radio" name="sex" value="female">
-					<input type="button" value="Submit">
+					<label name="ageLabel" for="age">Age:</label>
+					<input type="number" id="age" name="age"></label>
+					<input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)">
+					<!-- <input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)"> -->
+					<div id="ageResult">
+						<p id="resultOverall"></p>
+						<p id="resultMen"></p>
+						<p id="resultWomen"></p>
+					</div>
+
+					<script>
+
+					//using USA averages for now
+					const averageAgeMen = 76;
+					const averageAgeWomen = 81;
+					const averageAgeOverall = 79
+
+					function deathGuess(age){
+					const mortalityOverall = averageAgeOverall - age;
+					const mortalityMen = averageAgeMen - age;
+					const mortalityWomen = averageAgeWomen - age;
+
+						console.log(age);
+						
+						if (age > 90){
+							
+							resultOverall = "Please, contact us today and ask for the \"\Renewal\" package."
+							resultMen = ""
+							resultWomen = ""
+
+						}
+						else if(age > 60){
+
+							resultOverall = "You are " + mortalityOverall + " years from the average overall age of death. Uh oh!"
+							resultMen = "If you are male are only " + mortalityMen + " years from the average age of death."
+							resultWomen = "On the other hand, women still have " + mortalityWomen + " years to go!"
+						
+						}
+						else if(age > 40){
+
+							resultOverall = "You are " + mortalityOverall + " years from the average overall age of death. That put's a bit into perspective, doesn't it?"
+							resultMen = "Men have " + mortalityMen + " years more to go on average."
+							resultWomen = "As usual, women get a little more with " + mortalityWomen + " years."
+
+							}
+							else if(age > 20){
+
+							resultOverall = "You are " + mortalityOverall + " years from the average overall age of death. You're still young, take your time."
+							resultMen = "Men have " + mortalityMen + " years more to go on average."
+							resultWomen = "As usual, women get a little more with " + mortalityWomen + " years."
+
+							}
+							else if(age < 18){
+
+								resultOverall = "Please, this site is intended for adults only. My we suggest a possible birthday gift for the future?"
+								resultMen = ""
+								resultWomen = ""
+
+							}
+						// else if(age > 50){
+						// 		result = "If you are male are only" + (averageAgeMen - age) + "years from the average age of death!"
+						// 	}
+						
+						document.getElementById('resultOverall').innerHTML = resultOverall;
+						document.getElementById('resultMen').innerHTML = resultMen;
+						document.getElementById('resultWomen').innerHTML = resultWomen;
+
+					}
+
+					</script>
 				</form>
 			</div>
 

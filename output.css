@@ -62,6 +62,7 @@ header {
   height: 80px;
   top: 0px;
   background-color: #eaeaea;
+  z-index: 10000;
 }
 
 h2 {
@@ -93,17 +94,14 @@ a {
   display: flex;
   margin-left: auto;
 }
-
 #nav-bar ul {
   display: flex;
   align-items: flex-end;
 }
-
-#nav-bar ul li {
+#nav-bar li {
   padding: 0 20px 0 0;
 }
-
-#nav-bar ul li a {
+#nav-bar a {
   color: #255a6f;
   font-size: 1.17em;
 }

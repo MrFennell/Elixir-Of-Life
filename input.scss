@@ -60,6 +60,7 @@ header{
 	height:80px;
 	top: 0px;
 	background-color:$off-white;
+	z-index: 10000;
 }
 h2{
 	font-size: 2em;
@@ -85,18 +86,21 @@ a{
 	height: 33px;
 	display: flex;
 	margin-left: auto;
+
+	ul{
+		display:flex;
+		align-items:flex-end;
+		
+	}
+	li{
+		padding:0 20px 0 0;
+	}
+	a{
+		color:$light-blue;
+		font-size: 1.17em;
+	}
 }
-#nav-bar ul{
-  display:flex;
-  align-items:flex-end;
-}
-#nav-bar ul li{
-  padding:0 20px 0 0;
-}
-#nav-bar ul li a{
-	color:$light-blue;
-	font-size: 1.17em;
-}
+
 #main{
     width:100%;
     background-color:$off-white;
