@@ -155,14 +155,25 @@ h3 {
 }
 
 #testemonials {
+  border-bottom: 2px solid #255a6f;
+  margin-bottom: 30px;
+  width: 30%;
+  margin: auto;
+}
+
+#testemonials-section {
   background: #031b28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .quote-container-left-aligned {
   width: 80%;
-  height: 178px;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 40px;
 }
 .quote-container-left-aligned .quote-pic {
   height: 108px;
@@ -196,6 +207,48 @@ h3 {
   padding-bottom: 20px;
 }
 .quote-container-left-aligned .quote-block .quote-name {
+  float: right;
+}
+
+.quote-container-right-aligned {
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  margin-bottom: 40px;
+}
+.quote-container-right-aligned .quote-pic {
+  height: 108px;
+  width: 108px;
+  margin-left: 3px;
+}
+.quote-container-right-aligned .quote-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #255a6f;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+.quote-container-right-aligned .quote-block {
+  width: 70%;
+  padding: 33px 23px 13px 33px;
+  background-color: #255a6f;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+}
+.quote-container-right-aligned .quote-block .quote-head {
+  color: #eaeaea;
+  padding-bottom: 28px;
+  font-size: 18px;
+}
+.quote-container-right-aligned .quote-block .quote-body {
+  width: 90%;
+  padding-bottom: 20px;
+}
+.quote-container-right-aligned .quote-block .quote-name {
   float: right;
 }
 
