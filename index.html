@@ -71,8 +71,8 @@
 					<script>
 
 					//using USA averages for now
-					const averageAgeMen = 76;
-					const averageAgeWomen = 81;
+					const averageAgeMen = 76
+					const averageAgeWomen = 81
 					const averageAgeOverall = 79
 
 					function deathGuess(age){
@@ -81,7 +81,7 @@
 					const mortalityWomen = averageAgeWomen - age;
 
 						console.log(age);
-						
+
 						if (age > 90){
 							
 							resultOverall = "Please, contact us today and ask for the \"\Renewal\" package."
@@ -202,18 +202,18 @@
 				<label for="additional-info-yes">Yes!</label>
 				<input type="radio" id="additional-info-no" name="additional-info-no" value="No thanks.">
 				<label for="additional-info-no">No thanks.</label>
-
-				<label for="Gender">Gender:</label>
-				<input type="text" id="Gender" name="Gender">
-				<label for="eye-color">Eye Color:</label>
-				<input type="text" id="eye-color" name="eye-color">
-				<label for="religion">Religion/Faith:</label>
-				<input type="text" id="religion" name="religion">
-				<label for="blood-type">Blood Type:</label>
-				<input type="text" id="blood-type" name="blood-type">
-				<label for="blood-type">Emergency Contact:</label>
-				<input type="text" id="emergency-contact" name="emergency-contact">
-
+				<div class="hidden-by-default">
+					<label for="Gender">Gender:</label>
+					<input type="text" id="Gender" name="Gender">
+					<label for="eye-color">Eye Color:</label>
+					<input type="text" id="eye-color" name="eye-color">
+					<label for="religion">Religion/Faith:</label>
+					<input type="text" id="religion" name="religion">
+					<label for="blood-type">Blood Type:</label>
+					<input type="text" id="blood-type" name="blood-type">
+					<label for="blood-type">Emergency Contact:</label>
+					<input type="text" id="emergency-contact" name="emergency-contact">
+				</div>
 				<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
 				<textarea class="summary"></textarea>
 
