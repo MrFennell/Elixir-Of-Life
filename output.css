@@ -116,6 +116,7 @@ a {
 #main-splash-img {
   width: 100%;
   height: 767px;
+  min-height: 200px;
   background-image: url("images/vial_c_1400w_767h.png");
   /* background-image: url("images/vial_c_1400w_802h.png"); */
   background-repeat: no-repeat;
@@ -188,7 +189,7 @@ h3 {
   margin-bottom: 30px;
 }
 .quote-container-left-aligned .quote-block {
-  width: 70%;
+  width: 100%;
   padding: 33px 23px 13px 33px;
   background-color: #255a6f;
   border-radius: 7px 7px 7px 7px;
@@ -209,7 +210,7 @@ h3 {
 }
 
 .quote-container-right-aligned {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   flex-direction: row-reverse;
@@ -250,6 +251,10 @@ h3 {
   float: right;
 }
 
+.hidden-by-default {
+  display: none;
+}
+
 #contact_dont_miss_out {
   width: 50%;
   margin: auto;
@@ -259,11 +264,59 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-#requestInfo label {
-  width: auto;
+#requestInfo input[type=text],
+#requestInfo input[type=email] {
+  width: 100%;
+  margin: 0.5em 0px 16px 0px;
 }
-#requestInfo input[type=text] {
+#requestInfo input[type=submit] {
+  width: 300px;
+}
+#requestInfo textarea {
+  max-width: 100%;
+  width: 100%;
+  clear: both;
+  margin: 0.5em 0px 16px 0px;
+}
+#requestInfo #requestInfo-Block1 {
+  display: block;
+  float: left;
+}
+#requestInfo #requestInfo-Block1 .left-side {
+  float: left;
   width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+#requestInfo #requestInfo-Block1 .right-side {
+  float: right;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+#requestInfo #requestInfo-Block1 .clear-both {
+  clear: both;
+}
+#requestInfo #requestInfo-additional-info {
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+#requestInfo .radio-container {
+  display: flex;
+}
+#requestInfo input[type=radio] {
+  margin: 0 0 0 0;
+}
+
+footer {
+  width: 100%;
+  min-height: 77px;
+}
+footer img {
+  width: 77px;
+  margin: 0 auto;
+  display: block;
 }
 
 /*# sourceMappingURL=output.css.map */

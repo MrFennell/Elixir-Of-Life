@@ -110,6 +110,7 @@ a{
 #main-splash-img{
 	width:100%;
 	height: 767px;
+	min-height: 200px;
 	background-image: url("images/vial_c_1400w_767h.png");
 	/* background-image: url("images/vial_c_1400w_802h.png"); */
 	background-repeat: no-repeat;
@@ -180,7 +181,7 @@ h3{
 
 	}
 	.quote-block{
-		width:70%;
+		width:100%;
 		padding: 33px 23px 13px 33px;
 		background-color:$light-blue;
 		border-radius: 7px 7px 7px 7px;
@@ -202,7 +203,7 @@ h3{
 	}
 }
 .quote-container-right-aligned{
-	width: 80%;
+	width: 100%;
 	display:flex;
 	align-items: flex-end;
 	flex-direction: row-reverse;
@@ -251,13 +252,66 @@ h3{
 	width:50%;
 	margin:auto;
 }
+
+
 #requestInfo{
 	display:flex;
 	flex-direction:column;
-		label{
-			width:auto;
+	input[type='text'], 
+	input[type='email']{
+		width:100%;
+		margin: .5em 0px 16px 0px;
+	}
+	input[type="submit"]{
+		width:300px;
+	}
+	textarea{
+		max-width:100%;
+		width:100%;
+		clear:both;
+		margin: .5em 0px 16px 0px;
+	}	
+	#requestInfo-Block1{
+		display: block;
+		float:left;
+		.left-side{
+			float:left;
+			width: 45%;
+			display: flex;
+			flex-direction: column;
 		}
-		input[type='text']{
-			width:45%;
+		.right-side{
+			float: right;
+			width: 45%;
+			display: flex;
+			flex-direction: column;
 		}
+		.clear-both{
+			clear:both;
+					
+		}
+}
+	#requestInfo-additional-info{
+		margin:0 auto;
+		width: auto;
+		text-align:center;
+	}
+	.radio-container{
+		display:flex;
+	}
+		input[type="radio"]{
+				margin:0 0 0 0;
+		}
+}
+
+
+footer{
+	width: 100%;
+	min-height: 77px;
+
+	img{
+		width: 77px;
+    margin: 0 auto;
+    display: block;
+	}
 }

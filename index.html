@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/ageCalculator.js"></script>
 	<link href="output.css" rel="stylesheet">
@@ -126,23 +127,36 @@
 		<h3>Request more Information</h3>
 		<p id="contact_dont_miss_out">Don’t miss out. An opportunity like this only comes once in a lifetime.</p>
       <form id="requestInfo">
-				<label for="first-name">First Name:</label>
-				<input type="text" id="first-name" name="first-name">
-				<label for="last-name">Last Name:</label>
-				<input type="text" id="last-name" name="last-name">
-				<label for="email">Email:</label>
-				<input type="email" id="email">
-				<label for="phone">Phone Number:</label>
-				<input type="text" id="phone">
-				<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
-				<textarea class="summary"></textarea>
+				<div id="requestInfo-Block1">
+					<div class="left-side">
+						<label for="first-name">First Name:</label>
+						<input type="text" id="first-name" name="first-name">
+						<label for="last-name">Last Name:</label>
+						<input type="text" id="last-name" name="last-name">
+					</div>
+					<div class="right-side">
+						<label for="email">Email:</label>
+						<input type="email" id="email">
+						<label for="phone">Phone Number:</label>
+						<input type="text" id="phone">
+					</div>
+					<div class="clear-both">
+						<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
+						<textarea class="summary"></textarea>
+					</div>
+				</div>
+				<div id="requestInfo-additional-info">
+					<p id="additional-info-p">Would you care to fill out some optional information?</p>
+					<div class="radio-container">
+						<input type="radio" id="additional-info-yes" class=additional-info-radio name="additional-info-yes" value="Yes!">
+						<label for="additional-info-yes">Yes</label>
+						<input type="radio" id="additional-info-no" class=additional-info-radio name="additional-info-no" value="No thanks.">
+						<label for="additional-info-no">No</label>
+					</div>
+					<p>Please check one of the two options above.</p>
+				</div>
 
-				<p id="additional-info-p">I would like to fill out some optional info myself:</p>
-				<input type="radio" id="additional-info-yes" name="additional-info-yes" value="Yes!">
-				<label for="additional-info-yes">Yes!</label>
-				<input type="radio" id="additional-info-no" name="additional-info-no" value="No thanks.">
-				<label for="additional-info-no">No thanks.</label>
-				<div class="hidden-by-default">
+				<div class="hidden-by-default" id="requestInfo-Block2">
 					<label for="Gender">Gender:</label>
 					<input type="text" id="Gender" name="Gender">
 					<label for="eye-color">Eye Color:</label>
@@ -154,20 +168,22 @@
 					<label for="blood-type">Emergency Contact:</label>
 					<input type="text" id="emergency-contact" name="emergency-contact">
 				</div>
-				<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
-				<textarea class="summary"></textarea>
 
         <input type="submit" id="submit" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
+	<footer>
+			<!-- <div id="tempHide">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
+				from <a href="https://www.flaticon.com/"
+				title="Flaticon">www.flaticon.com</a>
+				 is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+				 <img src='http://fennellweb.com/sites/elixir_of_life/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
+	</footer>
 
-  <div class="section">
-    
-  </div>
+
+
 </div>
-<footer>
-	<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-</footer>
+
 </body>
 
 </html>
