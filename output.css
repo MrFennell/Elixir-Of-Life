@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: "Open Sans", sans-serif;
+  background-color: #eaeaea;
 }
 
 ol, ul {
@@ -56,10 +57,7 @@ table {
 
 header {
   position: fixed;
-  display: flex;
-  align-items: center;
   width: 100%;
-  height: 80px;
   top: 0px;
   background-color: #eaeaea;
   z-index: 10000;
@@ -67,9 +65,9 @@ header {
 
 h2 {
   font-size: 2em;
-  position: relative;
-  top: 220px;
-  left: 70px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
   color: #eaeaea;
   text-align: left;
   max-width: 700px;
@@ -84,18 +82,11 @@ a {
   text-decoration: none;
 }
 
-#logo {
-  height: 33px;
-  padding-left: 70px;
+.section {
+  padding: 0 5% 0 5%;
 }
 
-#nav-bar {
-  height: 33px;
-  display: flex;
-  margin-left: auto;
-}
 #nav-bar ul {
-  display: flex;
   align-items: flex-end;
 }
 #nav-bar li {
@@ -114,18 +105,15 @@ a {
 }
 
 #main-splash-img {
-  width: 100%;
-  height: 767px;
+  max-height: 767px;
   min-height: 200px;
   background-image: url("images/vial_c_1400w_767h.png");
-  /* background-image: url("images/vial_c_1400w_802h.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-
-.section {
-  padding: 0 70px 0 70px;
+#main-splash-img h2 {
+  color: #eaeaea;
 }
 
 h3 {
@@ -154,32 +142,30 @@ h3 {
 }
 
 #testemonials {
-  border-bottom: 2px solid #255a6f;
-  margin-bottom: 30px;
-  width: 30%;
-  margin: auto;
-}
-
-#testemonials-section {
-  background: #031b28;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
 }
-
-.quote-container-left-aligned {
-  width: 80%;
+#testemonials h3 {
+  border-bottom: 2px solid #255a6f;
+  margin-bottom: 30px;
+  width: 37%;
+  margin: auto;
+  flex-basis: 100%;
+}
+#testemonials .quote-container-left-aligned {
+  width: 100%;
   display: flex;
   align-items: flex-end;
   margin-bottom: 40px;
 }
-.quote-container-left-aligned .quote-pic {
+#testemonials .quote-container-left-aligned .quote-pic {
   height: 108px;
   width: 108px;
   margin-left: 3px;
 }
-.quote-container-left-aligned .quote-arrow {
+#testemonials .quote-container-left-aligned .quote-arrow {
   width: 30px;
   height: 30px;
   background-color: #255a6f;
@@ -188,7 +174,7 @@ h3 {
   padding-bottom: 12px;
   margin-bottom: 30px;
 }
-.quote-container-left-aligned .quote-block {
+#testemonials .quote-container-left-aligned .quote-block {
   width: 100%;
   padding: 33px 23px 13px 33px;
   background-color: #255a6f;
@@ -196,32 +182,31 @@ h3 {
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border-radius: 7px 7px 7px 7px;
 }
-.quote-container-left-aligned .quote-block .quote-head {
+#testemonials .quote-container-left-aligned .quote-block .quote-head {
   color: #eaeaea;
   padding-bottom: 28px;
   font-size: 18px;
 }
-.quote-container-left-aligned .quote-block .quote-body {
+#testemonials .quote-container-left-aligned .quote-block .quote-body {
   width: 90%;
   padding-bottom: 20px;
 }
-.quote-container-left-aligned .quote-block .quote-name {
+#testemonials .quote-container-left-aligned .quote-block .quote-name {
   float: right;
 }
-
-.quote-container-right-aligned {
+#testemonials .quote-container-right-aligned {
   width: 100%;
   display: flex;
   align-items: flex-end;
   flex-direction: row-reverse;
   margin-bottom: 40px;
 }
-.quote-container-right-aligned .quote-pic {
+#testemonials .quote-container-right-aligned .quote-pic {
   height: 108px;
   width: 108px;
   margin-left: 3px;
 }
-.quote-container-right-aligned .quote-arrow {
+#testemonials .quote-container-right-aligned .quote-arrow {
   width: 30px;
   height: 30px;
   background-color: #255a6f;
@@ -230,29 +215,32 @@ h3 {
   padding-bottom: 12px;
   margin-bottom: 30px;
 }
-.quote-container-right-aligned .quote-block {
-  width: 70%;
+#testemonials .quote-container-right-aligned .quote-block {
+  width: 100%;
   padding: 33px 23px 13px 33px;
   background-color: #255a6f;
   border-radius: 7px 7px 7px 7px;
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border-radius: 7px 7px 7px 7px;
 }
-.quote-container-right-aligned .quote-block .quote-head {
+#testemonials .quote-container-right-aligned .quote-block .quote-head {
   color: #eaeaea;
   padding-bottom: 28px;
   font-size: 18px;
 }
-.quote-container-right-aligned .quote-block .quote-body {
+#testemonials .quote-container-right-aligned .quote-block .quote-body {
   width: 90%;
   padding-bottom: 20px;
 }
-.quote-container-right-aligned .quote-block .quote-name {
+#testemonials .quote-container-right-aligned .quote-block .quote-name {
   float: right;
 }
-
-.hidden-by-default {
+#testemonials .hidden-by-default {
   display: none;
+}
+#testemonials #testemonials-container {
+  background: #031b28;
+  margin-top: 34px;
 }
 
 #contact_dont_miss_out {
@@ -263,11 +251,13 @@ h3 {
 #requestInfo {
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
 }
 #requestInfo input[type=text],
 #requestInfo input[type=email] {
   width: 100%;
   margin: 0.5em 0px 16px 0px;
+  height: 2.5em;
 }
 #requestInfo input[type=submit] {
   width: 300px;
@@ -302,9 +292,6 @@ h3 {
   width: auto;
   text-align: center;
 }
-#requestInfo .radio-container {
-  display: flex;
-}
 #requestInfo input[type=radio] {
   margin: 0 0 0 0;
 }
@@ -317,6 +304,12 @@ footer img {
   width: 77px;
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (min-width: 480px) {
+  #main-splash-img {
+    min-height: 738px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

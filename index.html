@@ -5,30 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/ageCalculator.js"></script>
-	<link href="output.css" rel="stylesheet">
+	
 	<title>Elixir of Life</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="output.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <img id="logo" src="http://fennellweb.com/sites/elixir_of_life/images/elixir_of_life_logo.png"
-	alt="Elixir of Life">
-  <nav id="nav-bar">
-      <ul>
-        <li><a class="nav-link" href="#vision">Our Vision</a></li>
-        <li><a class="nav-link" href="#testemonials">Testemonials</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-			</ul>
-  </nav>
-</header>
-<div id="main" class="container">
 
-	<div id="main-splash-img" >
-			<h2>Eternal youth at shockingly little cost to you or your loved ones.</h2>
-	</div>
+<header>
+	<nav class="navbar navbar-expand-lg">
+		<img  class="navbar-brand" id="logo" src="http://fennellweb.com/sites/elixir_of_life/images/elixir_of_life_logo.png"	alt="Elixir of Life">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>			
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav" id="nav-bar">
+				<li class="nav-item">
+					<a class="nav-link" href="#vision">Our Vision</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#testemonials">Testemonials</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
 	
+		<div id="main-splash-img" class="section" >
+				<h2>Eternal youth at shockingly little cost to you or your loved ones.</h2>
+		</div>
+
 	<div class="section" id="main-text-blocks">
 
-		<div class="text-blocks" id="ourVision">
+		<div class="text-blocks" id="vision">
 			<h3>Our Vision</h3>
 			<p>Whether it's old age, illness or simple depression, we've all feared death's cold embrace. </p>
 			<p>Our vision is a comprehensive, cross-state plan that would allow ordinary families to afford 
@@ -73,53 +86,53 @@
 			</div>
 
 	</div>
-
-	<h3 id="testemonials">Don't just take our word for it!</h3>
-
-  <div class="section"  id="testemonials-section">
-			
-		<div class="quote-container-left-aligned">
-				<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-betsyR-108px' height="108px" width="108px"></div>
-				<div class="quote-arrow"></div>
-				<div class="quote-block">
-					<p class="quote-head">"Fear of death was holding me back."</p>
-					<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
-						the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
-					<p class="quote-name">Betsy Rogers, Flight Technician</p>
+  	<div class id="testemonials">
+			<h3>Don't just take our word for it!</h3>
+			<div id="testemonials-container"  class="section" >
+				<div class="quote-container-left-aligned">
+						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-betsyR-108px' height="108px" width="108px"></div>
+						<div class="quote-arrow"></div>
+						<div class="quote-block">
+							<p class="quote-head">"Fear of death was holding me back."</p>
+							<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
+								the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
+							<p class="quote-name">Betsy Rogers, Flight Technician</p>
+						</div>
 				</div>
-		</div>
 
-		
-		<div class="quote-container-right-aligned">
-			<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-cliffC-108px.png' height="108px" width="108px"></div>
-			<div class="quote-arrow"></div>
-			<div class="quote-block">
-				<p class="quote-head">"My mother had been diagnosed with cancer."</p>
-				<p class="quote-body">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
-					Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
-				<p class="quote-name">Cliff Clartowski, Cartographer</p>
-			</div>
-		</div>
+				<div class="quote-container-right-aligned">
+					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-cliffC-108px.png' height="108px" width="108px"></div>
+					<div class="quote-arrow"></div>
+					<div class="quote-block">
+						<p class="quote-head">"My mother had been diagnosed with cancer."</p>
+						<p class="quote-body">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
+							Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
+						<p class="quote-name">Cliff Clartowski, Cartographer</p>
+					</div>
+				</div>
 
-		<div class="quote-container-left-aligned">
-			<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-jane-B-108px.png' height="108px" width="108px"></div>
-			<div class="quote-arrow"></div>	
-			<div class="quote-block">
-				<p class="quote-head">"Our daughter had been bedridden for months."</p>
-				<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
-					She's been a healthy seven year old girl for over five years now! </p>
-				<p class="quote-name">Jane Pharmins, Stenographer</p>
-			</div>
-		</div>
+				<div class="quote-container-left-aligned">
+					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-jane-B-108px.png' height="108px" width="108px"></div>
+					<div class="quote-arrow"></div>	
+					<div class="quote-block">
+						<p class="quote-head">"Our daughter had been bedridden for months."</p>
+						<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
+							She's been a healthy seven year old girl for over five years now! </p>
+						<p class="quote-name">Jane Pharmins, Stenographer</p>
+					</div>
+				</div>
 
-		<div class="quote-container-right-aligned">
-		<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-xiroth-108px.png' height="108px" width="108px"></div>
-		<div class="quote-arrow"></div>	
-			<div class="quote-block">
-				<p class="quote-head">"All shall become dust."</p>
-				<p class="quote-body">But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
-				<p class="quote-name">Xiroth the Unending, Unknown</p>
-			</div>
+				<div class="quote-container-right-aligned">
+					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-xiroth-108px.png' height="108px" width="108px">
+					</div>
+					<div class="quote-arrow">
+					</div>	
+					<div class="quote-block">
+						<p class="quote-head">"All shall become dust."</p>
+						<p class="quote-body">But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
+						<p class="quote-name">Xiroth the Unending, Unknown</p>
+					</div>
+				</div>
 		</div>
 	</div>
 	
@@ -172,6 +185,7 @@
         <input type="submit" id="submit" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
+
 	<footer>
 			<!-- <div id="tempHide">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
 				from <a href="https://www.flaticon.com/"
@@ -180,10 +194,10 @@
 				 <img src='http://fennellweb.com/sites/elixir_of_life/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
 
-
-</div>
-
-</body>
 
 </html>
