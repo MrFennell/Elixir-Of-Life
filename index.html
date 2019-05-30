@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/ageCalculator.js"></script>
-	
+
 	<title>Elixir of Life</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="output.css" rel="stylesheet">
@@ -139,50 +139,50 @@
   <div class="section" id="contact">
 		<h3>Request more Information</h3>
 		<p id="contact_dont_miss_out">Don’t miss out. An opportunity like this only comes once in a lifetime.</p>
-      <form id="requestInfo">
+      <form id="requestInfo" class="form-group">
 				<div id="requestInfo-Block1">
 					<div class="left-side">
 						<label for="first-name">First Name:</label>
-						<input type="text" id="first-name" name="first-name">
+						<input type="text" id="first-name" class="form-control" name="first-name">
 						<label for="last-name">Last Name:</label>
-						<input type="text" id="last-name" name="last-name">
+						<input type="text" id="last-name" class="form-control" name="last-name">
 					</div>
 					<div class="right-side">
 						<label for="email">Email:</label>
-						<input type="email" id="email">
+						<input type="email" class="form-control" id="email">
 						<label for="phone">Phone Number:</label>
-						<input type="text" id="phone">
+						<input type="text" class="form-control" id="phone">
 					</div>
 					<div class="clear-both">
 						<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
-						<textarea class="summary"></textarea>
+						<textarea  class="form-control"></textarea>
 					</div>
 				</div>
 				<div id="requestInfo-additional-info">
 					<p id="additional-info-p">Would you care to fill out some optional information?</p>
 					<div class="radio-container">
-						<input type="radio" id="additional-info-yes" class=additional-info-radio name="additional-info-yes" value="Yes!">
+						<input type="radio" id="additional-info-yes" class=additional-info-radio name="additional-info" value="Yes!" onclick="showFormPt2()">
 						<label for="additional-info-yes">Yes</label>
-						<input type="radio" id="additional-info-no" class=additional-info-radio name="additional-info-no" value="No thanks.">
+						<input type="radio" id="additional-info-no" class=additional-info-radio name="additional-info" value="No thanks." onclick="hideFormPt2()">
 						<label for="additional-info-no">No</label>
 					</div>
-					<p>Please check one of the two options above.</p>
+					<p id="please-check">Please check one of the two options above.</p>
 				</div>
 
 				<div class="hidden-by-default" id="requestInfo-Block2">
 					<label for="Gender">Gender:</label>
-					<input type="text" id="Gender" name="Gender">
+					<input type="text" id="Gender" class="form-control" name="Gender">
 					<label for="eye-color">Eye Color:</label>
-					<input type="text" id="eye-color" name="eye-color">
+					<input type="text" id="eye-color" class="form-control" name="eye-color">
 					<label for="religion">Religion/Faith:</label>
-					<input type="text" id="religion" name="religion">
+					<input type="text" id="religion" class="form-control" name="religion">
 					<label for="blood-type">Blood Type:</label>
-					<input type="text" id="blood-type" name="blood-type">
+					<input type="text" id="blood-type" class="form-control"  name="blood-type">
 					<label for="blood-type">Emergency Contact:</label>
-					<input type="text" id="emergency-contact" name="emergency-contact">
+					<input type="text" id="emergency-contact" class="form-control" name="emergency-contact">
 				</div>
 
-        <input type="submit" id="submit" value="Submit" href="https://www.freecodecamp.com/email-submit">
+        <input type="submit" id="submitForm" class="btn btn-primary mx-auto" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
 
@@ -191,8 +191,9 @@
 				from <a href="https://www.flaticon.com/"
 				title="Flaticon">www.flaticon.com</a>
 				 is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-				 <img src='http://fennellweb.com/sites/elixir_of_life/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
+	<img src='http://fennellweb.com/sites/elixir_of_life/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
 	</footer>
+	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/toggleForm.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

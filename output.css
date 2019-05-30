@@ -151,7 +151,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
 }
 #testemonials h3 {
   border-bottom: 2px solid #255a6f;
@@ -250,8 +249,7 @@ h3 {
 }
 
 #contact_dont_miss_out {
-  width: 50%;
-  margin: auto;
+  text-align: center;
 }
 
 #requestInfo {
@@ -302,6 +300,10 @@ h3 {
   margin: 0 0 0 0;
 }
 
+#requestInfo-Block2 {
+  display: none;
+}
+
 footer {
   width: 100%;
   min-height: 77px;
@@ -310,6 +312,10 @@ footer img {
   width: 77px;
   margin: 0 auto;
   display: block;
+}
+
+#submitForm {
+  display: none;
 }
 
 @media screen and (min-width: 480px) {

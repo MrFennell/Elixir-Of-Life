@@ -161,7 +161,6 @@ h3{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
 	
 	h3{
 		border-bottom: 2px solid $light-blue;
@@ -264,8 +263,7 @@ h3{
 	}
 }
 #contact_dont_miss_out{
-	width:50%;
-	margin:auto;
+	text-align:center;
 }
 
 
@@ -320,7 +318,9 @@ h3{
 				margin:0 0 0 0;
 		}
 }
-
+#requestInfo-Block2{
+	display: none;
+}
 footer{
 	width: 100%;
 	min-height: 77px;
@@ -331,7 +331,9 @@ footer{
     display: block;
 	}
 }
-
+#submitForm{
+	display:none;
+}
 @media screen and (min-width: 480px) {
 
 	#main-splash-img{
