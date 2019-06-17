@@ -252,55 +252,55 @@ h3 {
   text-align: center;
 }
 
-#requestInfo {
+#form {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
 }
-#requestInfo input[type=text],
-#requestInfo input[type=email] {
+#form input[type=text],
+#form input[type=email] {
   width: 100%;
   margin: 0.5em 0px 16px 0px;
   height: 2.5em;
 }
-#requestInfo input[type=submit] {
+#form input[type=submit] {
   width: 300px;
 }
-#requestInfo textarea {
+#form textarea {
   max-width: 100%;
   width: 100%;
   clear: both;
   margin: 0.5em 0px 16px 0px;
 }
-#requestInfo #requestInfo-Block1 {
+#form #form-Block1 {
   display: block;
   float: left;
 }
-#requestInfo #requestInfo-Block1 .left-side {
+#form #form-Block1 .left-side {
   float: left;
   width: 45%;
   display: flex;
   flex-direction: column;
 }
-#requestInfo #requestInfo-Block1 .right-side {
+#form #form-Block1 .right-side {
   float: right;
   width: 45%;
   display: flex;
   flex-direction: column;
 }
-#requestInfo #requestInfo-Block1 .clear-both {
+#form #form-Block1 .clear-both {
   clear: both;
 }
-#requestInfo #requestInfo-additional-info {
+#form #form-additional-info {
   margin: 0 auto;
   width: auto;
   text-align: center;
 }
-#requestInfo input[type=radio] {
+#form input[type=radio] {
   margin: 0 0 0 0;
 }
 
-#requestInfo-Block2 {
+#form-Block2 {
   display: none;
 }
 
@@ -314,7 +314,7 @@ footer img {
   display: block;
 }
 
-#submitForm {
+#submit {
   display: none;
 }
 
