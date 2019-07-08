@@ -4,11 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/ageCalculator.js"></script>
 
 	<title>Elixir of Life</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="output.css" rel="stylesheet">
+	<link href="/styles/main.css" rel="stylesheet">
 </head>
 <body>
 
@@ -70,17 +69,21 @@
 				<h3>Age Calculator</h3>
 				<p>Take as much time as needed to research your options. 
 					Enter your age and sex below to get a rough estimate on how much time you have to make a decision.</p>
-				<form>
-					<label name="ageLabel" for="age">Age:</label>
-					<input type="number" id="age" name="age"></label>
-					<input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)">
-					<!-- <input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)"> -->
-					<div id="ageResult">
-						<p id="resultOverall"></p>
-						<p id="resultMen"></p>
-						<p id="resultWomen"></p>
+				<form  class="form-inline">
+					<div class="form-group">
+						<label name="ageLabel" for="age">Age:</label>
+						<input type="number"  class="form-control" id="age" for="age" name="age">
+						<input type="button" value="Submit" class="btn btn-primary" onclick="deathGuess(document.querySelector('#age').value)">
+						<!-- <input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)"> -->
 					</div>
+					
+					
 				</form>
+				<div id="ageResult">
+					<p id="resultOverall"></p>
+					<p id="resultMen"></p>
+					<p id="resultWomen"></p>
+				</div>
 			</div>
 
 	</div>
@@ -89,7 +92,7 @@
 			<div id="testemonials-container"  class="section" >
 				<div class="quote-container-left-aligned">
 						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-betsyR-108px' height="108px" width="108px"></div>
-						<div class="quote-arrow"></div>
+						<span class="arrow-wrap" ><div class="quote-arrow"></div></span>
 						<div class="quote-block">
 							<p class="quote-head">"Fear of death was holding me back."</p>
 							<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
@@ -111,7 +114,7 @@
 
 				<div class="quote-container-left-aligned">
 					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-jane-B-108px.png' height="108px" width="108px"></div>
-					<div class="quote-arrow"></div>	
+					<span class="arrow-wrap" ><div class="quote-arrow"></div></span>
 					<div class="quote-block">
 						<p class="quote-head">"Our daughter had been bedridden for months."</p>
 						<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
@@ -138,60 +141,138 @@
 		<h3>Request more Information</h3>
 		<p id="contact_dont_miss_out">Don’t miss out. An opportunity like this only comes once in a lifetime.</p>
       <form id="form" class="form-group" action="https://www.freecodecamp.com/email-submit" method="POST">
-				<div id="form-Block1">
-					<div class="left-side">
+			<div id="form-block-1">
+				<div class="form-row">
+					<div class="form-group col-md-6">
 						<label for="first-name">First Name:</label>
-						<input type="text" id="first-name" name="firstName" class="form-control" name="first-name">
-						<label for="last-name">Last Name:</label>
-						<input type="text" id="last-name" name="lastName" class="form-control" name="last-name">
+						<input type="text" id="first-name" class="form-control" placeholder="First name is required." name="first-name">
 					</div>
-					<div class="right-side">
+					<div class="form-group col-md-6">
+						<label for="last-name">Last Name:</label>
+						<input type="text" id="last-name" class="form-control" placeholder="Last name is required." name="last-name">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
 						<label for="email">Email:</label>
 						<input type="email" name="email" placeholder="An email address is required." class="form-control" id="email">
+					</div>
+					<div class="form-group col-md-6">	
 						<label for="phone">Phone Number:</label>
-						<input type="text" class="form-control" id="phone" name="phone">
-					</div>
-					<div class="clear-both">
-						<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
-						<textarea  class="form-control"></textarea>
+						<input type="text" class="form-control" id="phone" placeholder="ex: 222-653-0789" name="phone">
 					</div>
 				</div>
-				<div id="form-additional-info">
-					<p id="additional-info-p">Would you care to fill out some optional information?</p>
-					<div class="radio-container">
-						<input type="radio" id="additional-info-yes" class=additional-info-radio name="additional-info" value="Yes!" onclick="showFormPt2()">
-						<label for="additional-info-yes">Yes</label>
-						<input type="radio" id="additional-info-no" class=additional-info-radio name="additional-info" value="No thanks." onclick="hideFormPt2()">
-						<label for="additional-info-no">No</label>
+				<div class="form-group">
+					<label for="summary">Please enter a brief summary of why you are interested in our services:</label>
+					<textarea  name="summary" class="form-control"></textarea>
+				</div>
+			</div>
+			<div id="form-additional-info-1" class="additional-info">
+				<p id="additional-info-p">Would you care to fill out some optional information?</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" id="additional-info-yes" class="form-check-input" name="additional-info" value="Yes!" onclick="showFormPt2()">
+					<label class="form-check-label" for="additional-info-yes">Yes</label>
+				</div>
+				<div class="form-check form-check-inline">	
+					<input type="radio" checked id="additional-info-no" class="form-check-input" name="additional-info" value="No thanks." onclick="hideFormPt2()">
+					<label class="form-check-label" for="additional-info-no">No</label>
+				</div>
+			</div>
+			<div class="hidden-by-default" id="form-block-2">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="Gender">Gender:</label>
+						<input type="text" id="Gender" class="form-control" name="Gender">
 					</div>
-					<p id="please-check">Please check one of the two options above.</p>
+					<div class="form-group col-md-6">
+						<label for="eye-color">Eye Color:</label>
+						<input type="text" id="eye-color" class="form-control" name="eyeColor">
+					</div>
 				</div>
-
-				<div class="hidden-by-default" id="form-Block2">
-					<label for="Gender">Gender:</label>
-					<input type="text" id="Gender" class="form-control" name="Gender">
-					<label for="eye-color">Eye Color:</label>
-					<input type="text" id="eye-color" class="form-control" name="eyeColor">
-					<label for="religion">Religion/Faith:</label>
-					<input type="text" id="religion" class="form-control" name="religion">
-					<label for="blood-type">Blood Type:</label>
-					<input type="text" id="blood-type" class="form-control"  name="bloodType">
-					<label for="blood-type">Emergency Contact:</label>
-					<input type="text" id="emergency-contact" class="form-control" name="emergencyContact">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="religion">Religion/Faith:</label>
+						<input type="text" id="religion" class="form-control" name="religion">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="blood-type">Blood Type:</label>
+						<input type="text" id="blood-type" class="form-control"  name="blood-type">
+					</div>
 				</div>
-
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="blood-type">Emergency Contact:</label>
+						<input type="text" id="emergency-contact" class="form-control" name="emergency-contact">
+					</div>
+					<div class="form-group col-md-6">
+							<label for="marital-status">Marital Status:</label>
+							<input type="text" id="marital-status" class="form-control" name="marital-status">
+					</div>
+				</div>
+				<div id="form-additional-info-2" class="additional-info">
+					<p id="additional-info-p">Would you care to fill out some <strong>more</strong> optional information?</p>
+					<div class="form-check form-check-inline">
+						<input type="radio" id="additional-info-yes-2" class="form-check-input" name="additional-info-2" value="Yes!" onclick="showFormPt3()">
+						<label class="form-check-label" for="additional-info-yes">Yes</label>
+					</div>
+					<div class="form-check form-check-inline">	
+						<input type="radio" checked id="additional-info-no-2" class="form-check-input" name="additional-info-2" value="No thanks." onclick="hideFormPt3()">
+						<label class="form-check-label" for="additional-info-no">No</label>
+					</div>
+				</div>
+			</div>
+			<div class="hidden-by-default" id="form-block-3">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="first-name">Country of birth:</label>
+						<input type="text" id="country-of-birth" class="form-control" name="country-of-birth">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="last-country">Last foreign country visited:</label>
+						<input type="text" id="last-country" class="form-control" name="last-country">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<p>Do you consider yourself superstitious?</p>
+						<div class="form-check form-check-inline">
+							<input type="radio" id="superstitious-yes" class="form-check-input" name="superstitious" value="Yes">
+							<label class="form-check-label" for="additional-info-yes">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">	
+							<input type="radio" id="superstitious-no" class="form-check-input" name="superstitious" value="No">
+							<label class="form-check-label" for="additional-info-no">No</label>
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<p>Do you wear contacts or glasses?</p>
+						<div class="form-check form-check-inline">
+							<input type="radio" id="vision-yes" class="form-check-input" name="vision" value="Yes">
+							<label class="form-check-label" for="vision-yes">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">	
+							<input type="radio" id="vision-no" class="form-check-input" name="vision" value="No">
+							<label class="form-check-label" for="vision-no">No</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="diet">Please document any dietary restrictions below:</label>
+					<textarea name="diet" class="form-control"></textarea>
+				</div>
+			</div>
         <input type="submit" id="submit" class="btn btn-primary mx-auto" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
-	<video id="video" src="https://youtu.be/7w-Ifxmqd5c"></video>
 	<footer>
-			<!-- <div id="tempHide">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
-				from <a href="https://www.flaticon.com/"
-				title="Flaticon">www.flaticon.com</a>
-				 is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-	<img src='http://fennellweb.com/sites/elixir_of_life/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
+	<!-- <div id="tempHide">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
+		from <a href="https://www.flaticon.com/"
+		title="Flaticon">www.flaticon.com</a>
+			is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+	<img src='/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
 	</footer>
-	<script type="text/javascript" src="http://fennellweb.com/sites/elixir_of_life/scripts/toggleForm.js"></script>
+	<script type="text/javascript" src="/scripts/toggleForm.js"></script>
+	<script type="text/javascript" src="/scripts/ageCalculator.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

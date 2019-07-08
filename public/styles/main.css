@@ -1,22 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.btn-primary {
+  background-color: #255a6f;
+  border-color: #255a6f;
+}
+
+.btn-primary:hover {
+  background-color: #031b28;
+  border-color: #031b28;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -92,10 +81,14 @@ a {
   align-items: flex-end;
 }
 #nav-bar li {
-  padding: 0 80px 0 0;
+  padding: 0 90px 0 0;
 }
 #nav-bar a {
   color: #255a6f;
+  font-size: 1.17em;
+}
+#nav-bar a:hover {
+  color: #031b28;
   font-size: 1.17em;
 }
 
@@ -109,7 +102,7 @@ a {
 #main-splash-img {
   max-height: 767px;
   min-height: 200px;
-  background-image: url("images/vial_c_1400w_767h.png");
+  background-image: url("http://fennellweb.com/sites/elixir_of_life/images/vial_c_1400w_767h.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -246,6 +239,7 @@ h3 {
 #testemonials #testemonials-container {
   background: #031b28;
   margin-top: 34px;
+  width: 100%;
 }
 
 #contact_dont_miss_out {
@@ -255,67 +249,31 @@ h3 {
 #form {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
 }
-#form input[type=text],
-#form input[type=email] {
-  width: 100%;
-  margin: 0.5em 0px 16px 0px;
-  height: 2.5em;
+#form .hidden-by-default {
+  display: none;
 }
-#form input[type=submit] {
-  width: 300px;
+#form p {
+  margin: 0;
 }
-#form textarea {
-  max-width: 100%;
-  width: 100%;
-  clear: both;
-  margin: 0.5em 0px 16px 0px;
-}
-#form #form-Block1 {
-  display: block;
-  float: left;
-}
-#form #form-Block1 .left-side {
-  float: left;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-#form #form-Block1 .right-side {
-  float: right;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-#form #form-Block1 .clear-both {
-  clear: both;
-}
-#form #form-additional-info {
-  margin: 0 auto;
-  width: auto;
+#form .additional-info {
   text-align: center;
+  margin-bottom: 1em;
 }
-#form input[type=radio] {
-  margin: 0 0 0 0;
+#form .additional-info p {
+  margin: 0;
 }
 
-#form-Block2 {
+#submitForm {
   display: none;
 }
 
 footer {
-  width: 100%;
-  min-height: 77px;
+  display: flex;
+  margin-bottom: 4em;
 }
 footer img {
-  width: 77px;
-  margin: 0 auto;
-  display: block;
-}
-
-#submit {
-  display: none;
+  margin: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -324,4 +282,4 @@ footer img {
   }
 }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=main.css.map */

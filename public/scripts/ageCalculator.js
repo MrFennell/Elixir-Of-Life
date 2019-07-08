@@ -3,12 +3,12 @@ const averageAgeWomen = 81;
 const averageAgeOverall = 79;
 
 function deathGuess(age){
-const mortalityOverall = averageAgeOverall - age;
-const mortalityMen = averageAgeMen - age;
-const mortalityWomen = averageAgeWomen - age;
-
-    console.log(age);
-
+    const mortalityOverall = averageAgeOverall - age;
+    const mortalityMen = averageAgeMen - age;
+    const mortalityWomen = averageAgeWomen - age;
+    let resultOverall = '';
+    let resultMen = '';
+    let resultWomen = '';
     if (age > 90){
         
         resultOverall = "Please, contact us today and ask for the \"\Renewal\" package."
@@ -29,25 +29,30 @@ const mortalityWomen = averageAgeWomen - age;
         resultMen = "Men have " + mortalityMen + " years more to go on average."
         resultWomen = "As usual, women get a little more with " + mortalityWomen + " years."
 
-        }
-        else if(age > 20){
+    }
+    else if(age > 20){
 
-        resultOverall = "You are " + mortalityOverall + " years from the average overall age of death. You're still young, take your time."
-        resultMen = "Men have " + mortalityMen + " years more to go on average."
-        resultWomen = "As usual, women get a little more with " + mortalityWomen + " years."
+    resultOverall = "You are " + mortalityOverall + " years from the average overall age of death. You're still young, take your time."
+    resultMen = "Men have " + mortalityMen + " years more to go on average."
+    resultWomen = "As usual, women get a little more with " + mortalityWomen + " years."
 
-        }
-        else if(age < 18){
+    }
+    else if(age > 18){
+        resultOverall = "Please, this site is intended for adults only. My we suggest a possible birthday gift for the future?"
+        resultMen = ""
+        resultWomen = ""
 
-            resultOverall = "Please, this site is intended for adults only. My we suggest a possible birthday gift for the future?"
-            resultMen = ""
-            resultWomen = ""
+    }
+    else {
+        resultOverall = "Please enter your age."
+        resultMen = ""
+        resultWomen = ""
 
-        }
+    }
     // else if(age > 50){
     // 		result = "If you are male are only" + (averageAgeMen - age) + "years from the average age of death!"
     // 	}
-    
+    console.log(resultOverall);
     document.getElementById('resultOverall').innerHTML = resultOverall;
     document.getElementById('resultMen').innerHTML = resultMen;
     document.getElementById('resultWomen').innerHTML = resultWomen;
