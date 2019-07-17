@@ -17,6 +17,10 @@ $body-bg: #eaeaea;
 
 
 /* HTML5 display-role reset for older browsers */
+
+html{
+	scroll-behavior: smooth;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -83,7 +87,9 @@ a{
 	// height: 33px;
 	// display: flex;
 	// margin-left: auto;
-
+	#logo{
+		height: 1.5em;
+	}
 	ul{
 		// display:flex;
 		align-items:flex-end;
