@@ -133,13 +133,10 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#main-text-blocks .text-blocks {
-  width: 40%;
-}
-#main-text-blocks .text-blocks h3 {
+#main-text-blocks h3 {
   border-bottom: 2px solid #255a6f;
 }
-#main-text-blocks .text-blocks p {
+#main-text-blocks p {
   margin-top: 34px;
 }
 
@@ -243,31 +240,41 @@ h3 {
 #testemonials .hidden-by-default {
   display: none;
 }
-#testemonials #testemonials-container {
+#testemonials #testemonials-background {
+  margin-top: 34px;
   background: #031b28;
+  width: 100%;
+}
+#testemonials #testemonials-container {
   margin-top: 34px;
   width: 100%;
 }
 
-#contact_dont_miss_out {
-  text-align: center;
+#contact h3 {
+  width: 37%;
+  border-bottom: 2px solid #255a6f;
+  margin: auto;
 }
-
-#form {
+#contact #contact_dont_miss_out {
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 1rem;
+}
+#contact #form {
   display: flex;
   flex-direction: column;
 }
-#form .hidden-by-default {
+#contact #form .hidden-by-default {
   display: none;
 }
-#form p {
+#contact #form p {
   margin: 0;
 }
-#form .additional-info {
+#contact #form .additional-info {
   text-align: center;
   margin-bottom: 1em;
 }
-#form .additional-info p {
+#contact #form .additional-info p {
   margin: 0;
 }
 

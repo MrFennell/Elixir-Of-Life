@@ -33,12 +33,11 @@
 		</nav>
 </header>
 	<div id="main-splash-img" class="section" >
-			<h2>Eternal youth at shockingly little cost to you or your loved ones.</h2>
+		<h2>Eternal youth at shockingly little cost to you or your loved ones.</h2>
 	</div>
 
 	<div class="section" id="main-text-blocks">
-
-		<div class="text-blocks" id="vision">
+		<div class="col-md-6" >
 			<h3>Our Vision</h3>
 			<p>Whether it's old age, illness or simple depression, we've all feared death's cold embrace. </p>
 			<p>Our vision is a comprehensive, cross-state plan that would allow ordinary families to afford 
@@ -56,7 +55,8 @@
 				Take some time to think about it - time is one thing we have more than enough of.</p>
 		</div> -->
 
-		<div class="text-blocks" id="text-blocks-caniafford">
+		<!-- <div class="text-blocks" id="text-blocks-caniafford"> -->
+		<div class="col-md-6" id="text-blocks-caniafford">
 				<h3>Can I Afford This?</h3>
 				<p>Yes!</p>
 				<p>None of us were meant to become billionaires. Instead of charging some exorbitant cost to keep our service 
@@ -65,7 +65,7 @@
 				<p>Please contact us today <a href="#contact">here</a> if that sounds like something right for you.</p>
 			</div>
 
-		<div class="text-blocks" id="text-blocks-agecalculator">
+		<div class="col-md-6" id="text-blocks-agecalculator">
 				<h3>Age Calculator</h3>
 				<p>Take as much time as needed to research your options. 
 					Enter your age and sex below to get a rough estimate on how much time you have to make a decision.</p>
@@ -76,7 +76,6 @@
 						<input type="button" value="Submit" class="btn btn-primary" onclick="deathGuess(document.querySelector('#age').value)">
 						<!-- <input type="button" value="Submit" onclick="deathGuess(document.querySelector('#age').value)"> -->
 					</div>
-					
 					
 				</form>
 				<div id="ageResult">
@@ -89,51 +88,53 @@
 	</div>
   	<div class id="testemonials">
 			<h3>Don't just take our word for it!</h3>
-			<div id="testemonials-container"  class="section" >
-				<div class="quote-container-left-aligned">
-						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-betsyR-108px' height="108px" width="108px"></div>
+			<div id="testemonials-background">
+				<div id="testemonials-container"  class="section" >
+					<div class="quote-container-left-aligned">
+							<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-betsyR-108px' height="108px" width="108px"></div>
+							<span class="arrow-wrap" ><div class="quote-arrow"></div></span>
+							<div class="quote-block">
+								<p class="quote-head">"Fear of death was holding me back."</p>
+								<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
+									the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
+								<p class="quote-name">Betsy Rogers, Flight Technician</p>
+							</div>
+					</div>
+
+					<div class="quote-container-right-aligned">
+						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-cliffC-108px.png' height="108px" width="108px"></div>
+						<div class="quote-arrow"></div>
+						<div class="quote-block">
+							<p class="quote-head">"My mother had been diagnosed with cancer."</p>
+							<p class="quote-body">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
+								Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
+							<p class="quote-name">Cliff Clartowski, Cartographer</p>
+						</div>
+					</div>
+
+					<div class="quote-container-left-aligned">
+						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-jane-B-108px.png' height="108px" width="108px"></div>
 						<span class="arrow-wrap" ><div class="quote-arrow"></div></span>
 						<div class="quote-block">
-							<p class="quote-head">"Fear of death was holding me back."</p>
-							<p class="quote-body">Ever since contacting Elixir of Life I've felt amazing. I'm more healthy and energetic than ever! The air smells sweeter, 
-								the colors look more vibrant. My cataracts are gone and my asthma hasn’t bugged me at all!</p>
-							<p class="quote-name">Betsy Rogers, Flight Technician</p>
+							<p class="quote-head">"Our daughter had been bedridden for months."</p>
+							<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
+								She's been a healthy seven year old girl for over five years now! </p>
+							<p class="quote-name">Jane Pharmins, Stenographer</p>
 						</div>
-				</div>
+					</div>
 
-				<div class="quote-container-right-aligned">
-					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-cliffC-108px.png' height="108px" width="108px"></div>
-					<div class="quote-arrow"></div>
-					<div class="quote-block">
-						<p class="quote-head">"My mother had been diagnosed with cancer."</p>
-						<p class="quote-body">Our family was devastated. One simple, mysterious phone call later and we were set on an Elixir of Life plan that fit our budget. 
-							Fast forward and now she's taken up dancing, grown back her hair and can devour an entire turkey in a matter of seconds!</p>
-						<p class="quote-name">Cliff Clartowski, Cartographer</p>
+					<div class="quote-container-right-aligned">
+						<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-xiroth-108px.png' height="108px" width="108px">
+						</div>
+						<div class="quote-arrow">
+						</div>	
+						<div class="quote-block">
+							<p class="quote-head">"All shall become dust."</p>
+							<p class="quote-body">But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
+							<p class="quote-name">Xiroth the Unending, Unknown</p>
+						</div>
 					</div>
-				</div>
-
-				<div class="quote-container-left-aligned">
-					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-jane-B-108px.png' height="108px" width="108px"></div>
-					<span class="arrow-wrap" ><div class="quote-arrow"></div></span>
-					<div class="quote-block">
-						<p class="quote-head">"Our daughter had been bedridden for months."</p>
-						<p class="quote-body">Fearing the worst we contacted Elixir of Life and they were eager to help. 
-							She's been a healthy seven year old girl for over five years now! </p>
-						<p class="quote-name">Jane Pharmins, Stenographer</p>
-					</div>
-				</div>
-
-				<div class="quote-container-right-aligned">
-					<div class="quote-pic"><img src='http://fennellweb.com/sites/elixir_of_life/images/testemonials-xiroth-108px.png' height="108px" width="108px">
-					</div>
-					<div class="quote-arrow">
-					</div>	
-					<div class="quote-block">
-						<p class="quote-head">"All shall become dust."</p>
-						<p class="quote-body">But in the wax and wane of civilizations there has been naught an elixir that prolongs thy’s existence to this extent, and at such a bargain. I shall shed a tear once they too rest in oblivion.</p>
-						<p class="quote-name">Xiroth the Unending, Unknown</p>
-					</div>
-				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -178,6 +179,7 @@
 					<label class="form-check-label" for="additional-info-no">No</label>
 				</div>
 			</div>
+			<!-- form part 2 -->
 			<div class="hidden-by-default" id="form-block-2">
 				<div class="form-row">
 					<div class="form-group col-md-6">
@@ -221,6 +223,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- form part 3 -->
 			<div class="hidden-by-default" id="form-block-3">
 				<div class="form-row">
 					<div class="form-group col-md-6">
@@ -260,7 +263,73 @@
 					<label for="diet">Please document any dietary restrictions below:</label>
 					<textarea name="diet" class="form-control"></textarea>
 				</div>
+				<div id="form-additional-info-3" class="additional-info">
+						<p id="additional-info-p">Please. You've come so far. Would you like to fill the last bit of information?</p>
+						<div class="form-check form-check-inline">
+							<input type="radio" id="additional-info-yes-3" class="form-check-input" name="additional-info-3" value="Yes!" onclick="showFormPt4()">
+							<label class="form-check-label" for="additional-info-yes">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">	
+							<input type="radio" checked id="additional-info-no-3" class="form-check-input" name="additional-info-3" value="No thanks." onclick="hideFormPt4()">
+							<label class="form-check-label" for="additional-info-no">No</label>
+						</div>
+					</div>
 			</div>
+			<!-- form part 4 -->
+			<div class="hidden-by-default" id="form-block-4">
+					<div class="form-row">
+					<div class="form-group col-md-6">
+							<p>Have you ever had a dream of a distant spire that seems to call your name?</p>
+							<div class="form-check form-check-inline">
+								<input type="radio"  class="form-check-input" name="dream" value="Yes">
+								<label class="form-check-label" for="additional-info-yes">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">	
+								<input type="radio" class="form-check-input" name="dream" value="No">
+								<label class="form-check-label" for="additional-info-no">No</label>
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<p>That feel of goosebumps on the back of your neck. Do you have it now?</p>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="goosebumps" value="Yes">
+								<label class="form-check-label" for="additional-info-yes">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">	
+								<input type="radio" class="form-check-input" name="goosebumps" value="No">
+								<label class="form-check-label" for="additional-info-no">No</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="diet">Have hallucinogens ever shown you things you cannot forget? Describe them in detail.</label>
+						<textarea name="diet" class="form-control"></textarea>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<p>Do you currently feel like you are being watched?</p>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="watched" value="Yes">
+								<label class="form-check-label" for="additional-info-yes">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">	
+								<input type="radio" class="form-check-input" name="watched" value="No">
+								<label class="form-check-label" for="additional-info-no">No</label>
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<p>Enough of this charade. You know who I am, don’t you?</p>
+							<div class="form-check form-check-inline">
+								<input type="radio"class="form-check-input" name="charade" value="Yes">
+								<label class="form-check-label" for="vision-yes">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">	
+								<input type="radio" class="form-check-input" name="charade" value="No">
+								<label class="form-check-label" for="vision-no">Yes</label>
+							</div>
+						</div>
+					</div>
+				</div>
         <input type="submit" id="submit" class="btn btn-primary mx-auto" value="Submit" href="https://www.freecodecamp.com/email-submit">
       </form>
 	</div>
@@ -269,7 +338,8 @@
 		from <a href="https://www.flaticon.com/"
 		title="Flaticon">www.flaticon.com</a>
 			is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-	<img src='/images/elixir-watermark-77x119.png' height="119px" width="77px"></div>
+	<img src='/images/elixir-light.svg' height="119px" width="77px"></div>
+	<!-- <img src='/images/elixir-watermark-77x119.png' height="119px" width="77px"></div> -->
 	</footer>
 	<script type="text/javascript" src="/scripts/toggleForm.js"></script>
 	<script type="text/javascript" src="/scripts/ageCalculator.js"></script>

@@ -33,6 +33,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -133,6 +134,7 @@ h3{
 	font-size: 26px;
 	padding: 88px 0 14px 0;
 	text-align: center;
+	
 }
 
 #get-started-text p{
@@ -143,15 +145,11 @@ h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	.text-blocks{
-		width: 40%;
-
-		h3{
-			border-bottom: 2px solid $light-blue;
-		}
-		p{
-			margin-top:34px;
-		}
+	h3{
+		border-bottom: 2px solid $light-blue;
+	}
+	p{
+		margin-top:34px;
 	}
 }
 .navbar-toggler{
@@ -256,33 +254,49 @@ h3{
 	.hidden-by-default{
 		display:none;
 	}
-	#testemonials-container{
+	#testemonials-background{
+		margin-top: 34px;
 		background:$dark-blue;
+		width:100%;
+	}
+	#testemonials-container{
+		
 		margin-top: 34px;
 		width:100%;
 
 	}
 }
-#contact_dont_miss_out{
-	text-align:center;
-}
-#form{
-	display: flex;
-    flex-direction: column;
-	.hidden-by-default{
-		display:none;
+
+#contact{
+	h3{
+	width: 37%;
+	border-bottom: 2px solid $light-blue;	
+	margin: auto;
 	}
-	p{
-		margin: 0;
+	#contact_dont_miss_out{
+		text-align:center;
+		margin-top: 34px;
+		margin-bottom:1rem;
 	}
-	.additional-info{
-		text-align: center;
-		margin-bottom: 1em;
+	#form{
+		display: flex;
+		flex-direction: column;
+		.hidden-by-default{
+			display:none;
+		}
 		p{
 			margin: 0;
 		}
+		.additional-info{
+			text-align: center;
+			margin-bottom: 1em;
+			p{
+				margin: 0;
+			}
+		}
 	}
 }
+
 // #form-block-2{
 // 	display: none;
 // }
