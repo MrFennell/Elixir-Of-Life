@@ -16,7 +16,7 @@ $body-bg: #eaeaea;
 } 
 
 
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older Fbrowsers */
 
 html{
 	scroll-behavior: smooth;
@@ -58,7 +58,6 @@ header{
 	z-index: 10000;
 	padding-left: 74px;
   	padding-top: 10px;
-  
 }
 h2{
 	font-size: 2em;
@@ -78,7 +77,6 @@ a{
 }
 .section{
 	padding: 0 5% 0 5%;
-
 }
 // #logo{
 // 	height: 33px;
@@ -108,7 +106,6 @@ a{
 		font-size: 1.17em;
 	}
 }
-
 #main{
     width:100%;
     background-color:$off-white;
@@ -116,7 +113,6 @@ a{
 		padding-top:66px;
 		
 }
-
 #main-splash-img{
 	max-height: 767px;
 	min-height: 200px;
@@ -129,22 +125,24 @@ a{
 		color: $off-white;
 	}
 }
-
 h3{
 	font-size: 26px;
 	padding: 88px 0 14px 0;
 	text-align: center;
 	
 }
-
 #get-started-text p{
 	padding-top:1.5em;
 }
-
 #main-text-blocks{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	#elixir-calculator{
+		position: absolute;
+		top: 45px;
+		left: 33px;
+	}
 	h3{
 		border-bottom: 2px solid $light-blue;
 	}
@@ -162,7 +160,7 @@ h3{
 	h3{
 		border-bottom: 2px solid $light-blue;
 		margin-bottom:30px;
-		width: 37%;
+		width: 44%;
 		margin: auto;
 		flex-basis: 100%
 	}
@@ -196,15 +194,18 @@ h3{
 
 			.quote-head{
 				color:$off-white;
-				padding-bottom: 28px;
-				font-size:18px;
+				// padding-bottom: 28px;
+				font-size:24px;
 			}
 			.quote-body{
 				width:90%;
-				padding-bottom:20px;
+				color: $dark-blue;
+				// padding-bottom:20px;
 			}
 			.quote-name{
 				float:right;
+				color: $dark-blue;
+				margin:0;
 			}
 		}
 	}
@@ -239,21 +240,22 @@ h3{
 
 			.quote-head{
 				color:$off-white;
-				padding-bottom: 28px;
-				font-size:18px;
+				// padding-bottom: 28px;
+				font-size:24px;
 			}
 			.quote-body{
 				width:90%;
-				padding-bottom:20px;
+				// padding-bottom:20px;
+				color: $dark-blue;
 			}
 			.quote-name{
 				float:right;
+				color: $dark-blue;
+				margin:0;
 			}
 		} 
 	}
-	.hidden-by-default{
-		display:none;
-	}
+
 	#testemonials-background{
 		margin-top: 34px;
 		background:$dark-blue;
@@ -263,13 +265,12 @@ h3{
 		
 		margin-top: 34px;
 		width:100%;
-
 	}
 }
 
 #contact{
 	h3{
-	width: 37%;
+	width: 44%;
 	border-bottom: 2px solid $light-blue;	
 	margin: auto;
 	}
@@ -281,8 +282,41 @@ h3{
 	#form{
 		display: flex;
 		flex-direction: column;
-		.hidden-by-default{
-			display:none;
+		#form-block-2{
+			display: none;
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		#form-block-2.visible{
+			opacity: 1;
+			transition: opacity 0.5s;
+		}
+		#form-block-2.display{
+			display: block;
+		}
+		#form-block-3{
+			display: none;
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		#form-block-3.visible{
+			opacity: 1;
+			transition: opacity 0.5s;
+		}
+		#form-block-3.display{
+			display: block;
+		}
+		#form-block-4{
+			display: none;
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		#form-block-4.visible{
+			opacity: 1;
+			transition: opacity 0.5s;
+		}
+		#form-block-4.display{
+			display: block;
 		}
 		p{
 			margin: 0;
@@ -296,13 +330,6 @@ h3{
 		}
 	}
 }
-
-// #form-block-2{
-// 	display: none;
-// }
-// #form-block-3{
-// 	display: none;
-// }
 #submitForm{
 	display:none;
 }
@@ -315,7 +342,6 @@ footer{
 	}
 }
 @media screen and (min-width: 480px) {
-
 	#main-splash-img{
 		min-height:738px;
 	}

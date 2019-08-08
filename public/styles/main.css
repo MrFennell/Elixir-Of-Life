@@ -8,7 +8,7 @@
   border-color: #031b28;
 }
 
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older Fbrowsers */
 html {
   scroll-behavior: smooth;
 }
@@ -133,6 +133,11 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+#main-text-blocks #elixir-calculator {
+  position: absolute;
+  top: 45px;
+  left: 33px;
+}
 #main-text-blocks h3 {
   border-bottom: 2px solid #255a6f;
 }
@@ -152,7 +157,7 @@ h3 {
 #testemonials h3 {
   border-bottom: 2px solid #255a6f;
   margin-bottom: 30px;
-  width: 37%;
+  width: 44%;
   margin: auto;
   flex-basis: 100%;
 }
@@ -186,15 +191,16 @@ h3 {
 }
 #testemonials .quote-container-left-aligned .quote-block .quote-head {
   color: #eaeaea;
-  padding-bottom: 28px;
-  font-size: 18px;
+  font-size: 24px;
 }
 #testemonials .quote-container-left-aligned .quote-block .quote-body {
   width: 90%;
-  padding-bottom: 20px;
+  color: #031b28;
 }
 #testemonials .quote-container-left-aligned .quote-block .quote-name {
   float: right;
+  color: #031b28;
+  margin: 0;
 }
 #testemonials .quote-container-right-aligned {
   width: 100%;
@@ -227,18 +233,16 @@ h3 {
 }
 #testemonials .quote-container-right-aligned .quote-block .quote-head {
   color: #eaeaea;
-  padding-bottom: 28px;
-  font-size: 18px;
+  font-size: 24px;
 }
 #testemonials .quote-container-right-aligned .quote-block .quote-body {
   width: 90%;
-  padding-bottom: 20px;
+  color: #031b28;
 }
 #testemonials .quote-container-right-aligned .quote-block .quote-name {
   float: right;
-}
-#testemonials .hidden-by-default {
-  display: none;
+  color: #031b28;
+  margin: 0;
 }
 #testemonials #testemonials-background {
   margin-top: 34px;
@@ -251,7 +255,7 @@ h3 {
 }
 
 #contact h3 {
-  width: 37%;
+  width: 44%;
   border-bottom: 2px solid #255a6f;
   margin: auto;
 }
@@ -264,8 +268,41 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-#contact #form .hidden-by-default {
+#contact #form #form-block-2 {
   display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-2.visible {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-2.display {
+  display: block;
+}
+#contact #form #form-block-3 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-3.visible {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-3.display {
+  display: block;
+}
+#contact #form #form-block-4 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-4.visible {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+#contact #form #form-block-4.display {
+  display: block;
 }
 #contact #form p {
   margin: 0;
