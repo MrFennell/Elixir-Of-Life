@@ -40,26 +40,18 @@
 	</div>
 
 	<div class="section" id="main-text-blocks">
-		<div class="col-md-6" >
-			<h3>Our Vision</h3>
-			<p>Whether it's old age, illness or simple depression, we've all feared death's cold embrace. </p>
-			<p>Our vision is a comprehensive, cross-state plan that would allow ordinary families to afford 
-				an elixir of life that will forever stave off that pesky reaper. </p>
-			<p>Our materials are sourced naturally from hermits who have kept their secrets safe for centuries. 
-				None can speak of them or know their countless names but they have one goal: satisfaction.</p>
-		</div>
+		<div class="row">
+			<div class="col-md-6" >
+				<h3>Our Vision</h3>
+				<p>Whether it's old age, illness or simple depression, we've all feared death's cold embrace. </p>
+				<p>Our vision is a comprehensive, cross-state plan that would allow ordinary families to afford 
+					an elixir of life that will forever stave off that pesky reaper. </p>
+				<p>Our materials are sourced naturally from hermits who have kept their secrets safe for centuries. 
+					None can speak of them or know their countless names but they have one goal: satisfaction.</p>
+			</div>
 
-		<!-- <div class="text-blocks" id="text-blocks-whyimmortality">
-			<h3>Why Immortality?</h3>
-			<p>Imagine a world where you no longer had to worry about sickness taking your life or that of a loved one. </p>
-			<p>Imagine a world where your worst enemy is on their deathbed and you are continuing to live your life, 
-				free from your burdons.</p>
-			<p>Imagine this being available at a low, personal cost where we do all the legwork. 
-				Take some time to think about it - time is one thing we have more than enough of.</p>
-		</div> -->
 
-		<!-- <div class="text-blocks" id="text-blocks-caniafford"> -->
-		<div class="col-md-6" id="text-blocks-caniafford">
+			<div class="col-md-6" id="text-blocks-caniafford">
 				<h3>Can I Afford This?</h3>
 				<p>Yes!</p>
 				<p>None of us were meant to become billionaires. Instead of charging some exorbitant cost to keep our service 
@@ -67,33 +59,30 @@
 					wanting to give. </p>
 				<p>Please contact us today <a href="#contact">here</a> if that sounds like something right for you.</p>
 			</div>
-			<!-- <div class="col-md-6">
-					<img src='/images/elixir-light.svg'>
-			</div> -->
+		</div>
 		<div class="col-md-6" id="text-blocks-agecalculator">
-				<img id="elixir-calculator" src='/images/elixir-light.svg'>
-				<h3>Age Calculator</h3>
-				<p>Take as much time as needed to research your options. 
-					Enter your age and sex below to get a rough estimate on how much time you have to make a decision.
-				</p>
-				<form>
-					<div class="input-group mb-3">	
-						<div class="input-group-prepend">
-							<span class="input-group-text">Age:</span>
-						</div>
-						<input type="number"  class="form-control" id="age" for="age" name="age" placeholder="Enter your age and calculate.">
-						<div class="input-group-append">
-							<input type="button" value="Calculate" class="btn btn-primary" onclick="deathGuess(document.querySelector('#age').value)">
-						</div>
+			<img id="elixir-calculator" src='/images/elixir-light.svg'>
+			<h3>Age Calculator</h3>
+			<p>Take as much time as needed to research your options. 
+				Enter your age and sex below to get a rough estimate on how much time you have to make a decision.
+			</p>
+			<form>
+				<div class="input-group mb-3">	
+					<div class="input-group-prepend">
+						<span class="input-group-text">Age:</span>
 					</div>
-				</form>
-				<div id="ageResult">
-					<p id="resultOverall"></p>
-					<p id="resultMen"></p>
-					<p id="resultWomen"></p>
+					<input type="number"  class="form-control" id="age" for="age" name="age" placeholder="Enter your age and calculate.">
+					<div class="input-group-append">
+						<input type="button" value="Calculate" class="btn btn-primary" onclick="deathGuess(document.querySelector('#age').value)">
+					</div>
 				</div>
+			</form>
+			<div id="ageResult">
+				<p id="resultOverall"></p>
+				<p id="resultMen"></p>
+				<p id="resultWomen"></p>
 			</div>
-
+		</div>
 	</div>
   	<div class id="testemonials">
 			<h3>Don't just take our word for it!</h3>
@@ -150,7 +139,7 @@
   <div class="section" id="contact">
 		<h3>Request more Information</h3>
 		<p id="contact_dont_miss_out">Don’t miss out. An opportunity like this only comes once in a lifetime.</p>
-      <form id="form" class="form-group" action="https://www.freecodecamp.com/email-submit" method="POST">
+      <form id="form" class="form-group">
 			<div id="form-block-1">
 				<div class="form-row">
 					<div class="form-group col-md-6">
@@ -339,7 +328,7 @@
 						</div>
 					</div>
 				</div>
-        <input type="submit" id="submit" class="btn btn-primary mx-auto" value="Submit" href="https://www.freecodecamp.com/email-submit">
+        <input type="submit" id="submit" class="btn btn-primary mx-auto" value="Submit" >
       </form>
 	</div>
 	<footer>

@@ -46,3 +46,7 @@ document.querySelector('#additional-info-yes-2').addEventListener('click', funct
              el.classList.remove('display');
          }, 500);
  });
+
+ document.querySelector('#submit').addEventListener('click', function(e){
+    alert("Thank you for getting in touch. Expect us shortly.")
+});
