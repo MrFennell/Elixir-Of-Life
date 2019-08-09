@@ -56,6 +56,7 @@ header{
 	top: 0px;
 	background-color:$off-white;
 	z-index: 10000;
+	// padding: 0 0 0 5%;
 }
 h2{
 	font-size: 2em;
@@ -88,16 +89,11 @@ a{
 }
 
 #nav-bar{
-
-	#logo{
-		height: 1.5em;
-	}
 	ul{
 		align-items:flex-end;
-		
 	}
 	li{
-		padding:0 90px 0 0;
+		padding:0 0 0 90px;
 	}
 	a{
 		color:$light-blue;
@@ -107,6 +103,13 @@ a{
 		color:$dark-blue;
 		font-size: 1.17em;
 	}
+}
+.navbar{
+	padding: .5rem 5% .5rem 5%;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+	padding-left: 0;
+	padding-right: 0;
 }
 #main{
     width:100%;
