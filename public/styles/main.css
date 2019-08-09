@@ -119,7 +119,7 @@ a {
 #main-splash-img {
   max-height: 767px;
   min-height: 500px;
-  background-image: url("http://fennellweb.com/sites/elixir_of_life/images/vial_c_1400w_767h.png");
+  background-image: url("http://fennellweb.com/sites/elixir-of-life/images/vial_c_1400w_767h.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -260,7 +260,7 @@ a {
   -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   padding-bottom: 12px;
-  margin-bottom: 30px;
+  margin: 0 0 30px -1px;
 }
 #testemonials .quote-container-right-aligned .quote-block {
   width: 100%;
